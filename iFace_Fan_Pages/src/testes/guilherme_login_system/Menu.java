@@ -3,13 +3,13 @@ package testes.guilherme_login_system;
 import java.util.Scanner;
 
 public class Menu {
-	
+
 	public static int isItLogIn = 0;
 
 	public int isItUserFound = 0;
 
 	public static int isItExit = 0;
-	
+
 	public User menuUser = new User();
 	public Login_Sign_up menuLogin_Sign_up = new Login_Sign_up();
 
@@ -30,18 +30,18 @@ public class Menu {
 		switch (selection) {
 		case 1:
 			// Call method login in Login_Sign_up
-			System.out.println ("Sorry, not implemented yet.");
-			
+			System.out.println("Sorry, not implemented yet.");
+
 			if (isItUserFound == 1) {
 				this.display2();
 			}
 			break;
 		case 2:
 			// Call method sign_up in Login_Sign_up
-			
+
 			menuUser = menuLogin_Sign_up.sign_up();
 			menuUser.printUserObjectAttributes();
-			
+
 			this.display2();
 			break;
 		case 3:
@@ -76,15 +76,15 @@ public class Menu {
 			switch (selection) {
 			case 1:
 				System.out.println("1 Account");
-				//this.display3();
+				// this.display3();
 				break;
 			case 2:
 				System.out.println("2 Friends");
-				//this.display4();
+				// this.display4();
 				break;
 			case 3:
 				System.out.println("3 Messages");
-				//this.display5();
+				// this.display5();
 				break;
 			case 4:
 				System.out.println("4 Files");
@@ -97,6 +97,6 @@ public class Menu {
 				break;
 			}
 		}
-	}				
+	}
 
 }
